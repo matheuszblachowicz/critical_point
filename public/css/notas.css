@@ -1,0 +1,38 @@
+.avali
+{ 
+    position: relative;
+    display:flex;
+    flex-direction:row-reverse;
+    margin-top: 2rem;
+    border: 0.20rem solid rgb(249 115 22);
+    border-radius: 0.25rem;
+    box-sizing:border-box;
+    background:linear-gradient(to right, #f00,#ff0,#0f0);
+}
+.avali input
+{
+    display:none;
+}
+.avali label
+{
+    display:block;
+    cursor:pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.65s;
+    background: #fff;
+    color: #000;
+    font-size: 1.25rem;
+    border-right: 0.20rem solid rgb(249 115 22);
+    margin-right: -1px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+.avali input[type="radio"]:hover ~ label,
+.avali input[type="radio"]:checked ~ label
+{
+    background:transparent;
+}
